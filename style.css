@@ -1,0 +1,384 @@
+body, p, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+#btn {
+  cursor: pointer;
+  border: none;
+  background-color: #FF6624;
+  border-radius: 30px;
+  padding: 15px 80px;
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+}
+#btn p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+hr {
+  background-color: #D9D9D9;
+  height: 4px;
+  width: 60%;
+  border: none;
+}
+
+.logo {
+  margin-left: 100px;
+}
+.logo img {
+  rotate: -10deg;
+  float: left;
+  z-index: 2;
+}
+.logo p {
+  font-family: "Playfair Display", serif;
+  color: #AB0505;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.testeOfFood, .recipes, .blog {
+  padding: 0 50px;
+}
+
+#contacts {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  align-self: center;
+}
+#contacts svg {
+  margin-right: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  margin-left: 100px;
+}
+header .logo img {
+  width: 95.48px;
+  margin-bottom: -55px;
+  margin-left: -35px;
+}
+header .logo p {
+  font-size: 48px;
+  line-height: 63.98px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header .menu #btn {
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+header .menu ul {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  width: 70%;
+  justify-content: space-around;
+}
+header .menu ul li {
+  cursor: pointer;
+  margin: 0 5% 0 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .menu ul li svg:hover path {
+  fill: #FF6624;
+}
+header .menu ul li #btn {
+  padding: 20px 30px;
+  margin: 0;
+}
+header .menu ul li p {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42.66px;
+  text-align: left;
+  color: #797575;
+}
+header .menu #contacts {
+  margin-left: 30px;
+}
+header .menu #contacts svg:hover path {
+  fill: #FF6624;
+}
+
+.banner {
+  background-image: url(./images/main.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+.banner div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px 0;
+}
+.banner div h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: #AB0505;
+  margin: 30px 0;
+  padding: 0;
+}
+.banner div p {
+  text-align: center;
+}
+
+.testeOfFood div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.testeOfFood div .card {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin: 30px 5px;
+  padding: 15px;
+}
+.testeOfFood div .card div:first-child {
+  margin-right: 10px;
+  width: 144px;
+  height: 120px;
+  border-radius: 30px;
+  border-color: #D9D9D9;
+  background-size: cover;
+  background-position: center;
+  grid-area: 1/1/2/2;
+}
+.testeOfFood div .card div:last-child {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/2/2/4;
+}
+.testeOfFood div .card h3 {
+  font-size: 2.5em;
+}
+.testeOfFood div .card p {
+  font-size: 1.25em;
+}
+.testeOfFood div .card:hover {
+  background-color: #FF6624;
+  color: white;
+}
+.testeOfFood div .card:nth-child(1) div:first-child {
+  background-image: url(./images/salad.jpg);
+}
+.testeOfFood div .card:nth-child(2) div:first-child {
+  background-image: url(./images/cake.jpg);
+}
+.testeOfFood div .card:nth-child(3) div:first-child {
+  background-image: url(./images/burger.jpg);
+}
+.testeOfFood div .card:nth-child(4) div:first-child {
+  background-image: url(./images/icecream.jpg);
+}
+.testeOfFood div .card:nth-child(5) div:first-child {
+  background-image: url(./images/pasta.jpg);
+}
+.testeOfFood div .card:nth-child(6) div:first-child {
+  background-image: url(./images/cookies.jpg);
+}
+
+.recipes div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 290px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.recipes div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog svg {
+  margin: auto;
+  display: block;
+}
+.blog div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.blog div div {
+  display: block;
+}
+.blog div div .news {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin: 30px 0;
+}
+.blog div div .news div:first-child {
+  grid-area: 1/1/2/2;
+  background-image: url(./images/blog.jpg);
+  border-radius: 50%;
+  border: 8px solid #F15E1F;
+  background-size: cover;
+  background-position: center;
+  width: 15em;
+  height: 15em;
+}
+.blog div div .news div:last-child {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1/2/2/4;
+}
+.blog div div svg {
+  position: relative;
+}
+.blog div div .up {
+  padding-left: 10%;
+  display: inline;
+}
+.blog div div .down {
+  padding-left: 65%;
+}
+
+footer {
+  padding: 50px 100px;
+  background-color: #FF6624;
+}
+footer p, footer li {
+  color: white;
+}
+footer .logo img {
+  width: 234.91px;
+  float: left;
+  margin: -170px -100px;
+}
+footer .logo p {
+  font-size: 128px;
+  line-height: 63.98px;
+  margin-top: 100px;
+}
+footer .menuFooter {
+  display: flex;
+  padding: 0 0 0 100px;
+}
+footer .menuFooter svg {
+  width: 7%;
+}
+footer .menuFooter img {
+  width: 15%;
+}
+footer .menuFooter ul {
+  list-style-type: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5em;
+}
+footer .menuFooter ul li {
+  cursor: pointer;
+  padding: 5px 0;
+}
+footer .menuFooter ul li:hover {
+  font-weight: 800;
+}
+footer .menuFooter .fact p {
+  font-family: "Playfair Display", serif;
+  margin: 50px 0;
+}
+footer .menuFooter .socialMedia {
+  cursor: pointer;
+  margin-top: 30px;
+}
+footer .menuFooter .socialMedia svg {
+  margin-right: 20px;
+}
+footer .menuFooter .menuFooterTwo {
+  width: 20%;
+}
+footer .menuFooter .followUs {
+  width: 40%;
+}
+footer .menuFooter .contactUs {
+  width: 30%;
+}
+footer .menuFooter .contactUs input {
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  height: 30px;
+}
+footer .menuFooter .contactUs .text-submit {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: #FF6624;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+footer .menuFooter .contactUs .cash {
+  cursor: pointer;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+footer .menuFooter .contactUs .cash img {
+  margin: 0 20px 0 0;
+}
+footer .menuFooter .contactUs .cash img:nth-child(1) {
+  width: 152px;
+}
+footer .menuFooter .contactUs .cash img:nth-child(2) {
+  width: 64px;
+}
+footer .menuFooter .contactUs .cash img:nth-child(3) {
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
